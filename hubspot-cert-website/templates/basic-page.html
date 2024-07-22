@@ -1,0 +1,13 @@
+<!--
+    templateType: page
+    label: Basic Page
+    isAvailableForNewContent: true
+-->
+{% extends "layouts/base.html" %}
+
+{% block body %}
+  <div class="content-wrapper">
+    <h1>{{ content.title }}</h1>
+    {{ content.body }}
+  </div>
+{% endblock body %}

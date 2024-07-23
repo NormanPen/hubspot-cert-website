@@ -9,19 +9,23 @@
     <meta charset="utf-8">
     <title>{{ content.html_title }}</title>
     <meta name="description" content="{{ content.meta_description }}">
+
+    {{ require_css(get_asset_url("../css/main.css")) }}
+    {{ require_css(get_asset_url("../css/output.css")) }}
+
     {{ standard_header_includes }}
   </head>
   <body>
     <div class="page-wrap">
       {% block header %}
-        {% global_partial path="hubspot-cert-website/templates/partials/header.html" %}
+        {% global_partial path="cert-theme/templates/partials/header.html" %}
       {% endblock header %}
-
+      <h1 class="text-green-200 hover:text-red-500">Tailwind Test</h1>
       {% module "page_template_rich_text" path="@hubspot/rich_text" label="Rich Text" %}
     </div>
 
     {% block footer %}
-      {% global_partial path="hubspot-cert-website/templates/partials/footer.html" %}
+      {% global_partial path="cert-theme/templates/partials/footer.html" %}
     {% endblock footer %}
     {{ standard_footer_includes }}
   </body>

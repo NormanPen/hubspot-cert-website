@@ -12,18 +12,20 @@
 
     {{ require_css(get_asset_url("../css/main.css")) }}
     {{ require_css(get_asset_url("../css/output.css")) }}
+    {{ require_css(get_asset_url("../css/layout.css")) }}
 
     {{ standard_header_includes }}
   </head>
   <body>
-    <div class="page-wrap">
+
       {% block header %}
         {% global_partial path="cert-theme/templates/partials/header.html" %}
       {% endblock header %}
       <h1 class="text-green-200 hover:text-red-500">Tailwind Test</h1>
 
-      {% module "page_template_rich_text" path="@hubspot/rich_text" label="Rich Text" %}
-    </div>
+      {% dnd_area "no_structure", label="No Structure" %}
+      {% end_dnd_area %}
+
 
     {% block footer %}
       {% global_partial path="cert-theme/templates/partials/footer.html" %}

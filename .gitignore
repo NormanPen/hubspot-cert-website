@@ -1,3 +1,4 @@
 # Ignoring HubSpot config file
 hubspot.config.yml
-node_modules
+**/node_modules
+cert-theme/node_modules

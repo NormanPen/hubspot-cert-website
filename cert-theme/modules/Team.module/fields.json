@@ -1,0 +1,104 @@
+[ {
+  "id" : "4ceb9fb7-f1fb-1b74-372d-b517faeb9f18",
+  "name" : "team_member",
+  "display_width" : null,
+  "label" : "Team member",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 3,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "485d13a6-1616-a095-9e66-6e1716d332e6",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://143792550.fs1.hubspotusercontent-eu1.net/hubfs/143792550/ape1.png",
+      "alt" : "picture of an ape",
+      "loading" : "lazy",
+      "width" : 640,
+      "height" : 475,
+      "max_width" : 640,
+      "max_height" : 475
+    }
+  }, {
+    "id" : "51b7c9da-935e-c6f9-0d8c-f51d53b7b6f2",
+    "name" : "member_name",
+    "display_width" : null,
+    "label" : "Member Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "John Doe"
+  }, {
+    "id" : "e97634b4-d3e9-3fe2-0b06-94232d789a1d",
+    "name" : "member_position",
+    "display_width" : null,
+    "label" : "Member Position",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Position"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://143792550.fs1.hubspotusercontent-eu1.net/hubfs/143792550/ape1.png",
+      "alt" : "picture of an ape",
+      "loading" : "lazy",
+      "width" : 640,
+      "height" : 475,
+      "max_width" : 640,
+      "max_height" : 475
+    },
+    "member_name" : "Norman Pendzich",
+    "member_position" : "Director"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://143792550.fs1.hubspotusercontent-eu1.net/hubfs/143792550/ape2.png",
+      "alt" : "picture of an ape",
+      "loading" : "lazy",
+      "width" : 640,
+      "height" : 475,
+      "max_width" : 640,
+      "max_height" : 475
+    },
+    "member_name" : "Volker Racho",
+    "member_position" : "Consulting"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://143792550.fs1.hubspotusercontent-eu1.net/hubfs/143792550/ape3.png",
+      "alt" : "picture of an ape",
+      "loading" : "lazy",
+      "width" : 640,
+      "height" : 475,
+      "max_width" : 640,
+      "max_height" : 475
+    },
+    "member_name" : "Mario Ana",
+    "member_position" : "Marketing & HR"
+  } ]
+} ]

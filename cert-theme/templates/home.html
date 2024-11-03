@@ -9,13 +9,44 @@
 {% block body %}
 
 {# All templates are recommended to have an h1 present for both accessibility and SEO best practice. This should be at the top of the template before any other textual content. The h1 element below is within a dnd area to allow content editors the ability to adjust the content and alignment of the text. #}
-<h1>Home</h1>
-{% dnd_area "dnd_area"
-  label="Main section",
-  class="body-container body-container--home"
-%}
+<div class="content">
+  <section class="me-section">
+    <h1>Norman Pendzich</h1>
+    {% dnd_area "dnd_area"
+      label="Main section",
+      class="body-container body-container--home"
+    %}
 
-  
+    {% dnd_section
+    padding={
+      top: 10,
+      bottom: 10,
+      left: 0,
+      right: 0
+    }
+    %}
+    {% dnd_column width=6 %}
+      {% dnd_row %}
+        <div class="featured-image">
+          {% dnd_module "image" path="@hubspot/image" flexbox_positioning="MIDDLE_CENTER", label="Featured Image" %}
+          {% end_dnd_module %}
+        </div>
+      {% end_dnd_row %}
+    {% end_dnd_column %}
+    {% dnd_column width=6, offset=6 %}
+      {% dnd_row %}
+        {% dnd_module "rich_text" path="@hubspot/rich_text" label="Me Intro" %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+    {% end_dnd_column %}
+    {% end_dnd_section %}
 
-{% end_dnd_area %}
+
+    {% end_dnd_area %}
+</section>
+
+<section class="team-section">
+  {% module "module_17306461182531" path="/cert-theme/modules/Team", label="Team" no_wrapper="true" %}
+</section>
+</div>
 {% endblock body %}

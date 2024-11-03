@@ -5,6 +5,26 @@
 -->
 <!-- Begin partial -->
 <header>
-    <h1>Header</h1> 
-</header>
+    <div class="header-wrapper">
+        <div class="header__logo">
+        {% module 'site_logo' path='@hubspot/logo'
+        img='{ 
+          "override_inherited_src": true, 
+          "src": get_asset_url("../../images/nope-logo.png"),
+          "alt": "Thrifty",
+          "width": "270",
+          "height": "179",
+          "loading": "lazy"
+        }'
+        label='Logo'%}
+        </div>
+ 
+    </div>
+
+    <div class="header-spacer"></div>
+    <div class="header__quote">
+        {% module "header_quote" path="@hubspot/rich_text" label="Header Quote" %}
+    </div>
+
+
 <!-- End partial -->

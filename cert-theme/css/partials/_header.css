@@ -1,0 +1,18 @@
+header {
+  padding-left: 0 !important;
+}
+
+
+.header-wrapper {
+  background-color: #2C2C2C;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-spacer {
+  height: 183.396px; 
+}
